@@ -1,0 +1,6 @@
+$(document).on('click', '#suivente-mois', function () {
+    let url = $('#container-calendrier').attr('data');
+    let next_previous = $(this).attr('data');
+    let date = $(this).attr('data-target');
+    testEvenementPasser(url, date, next_previous);
+});
